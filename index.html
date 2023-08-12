@@ -4,28 +4,34 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
     <title>Document</title>
   </head>
   <body>
     <main>
-      <nav>
-        <div>Mario Meza</div>
-        <div>
-          <ul>
-            <li>About me</li>
-            <li>Projects</li>
-            <li>Contact me</li>
-          </ul>
-        </div>
-      </nav>
+      <header>
+        <nav>
+          <div class="logo">Mario Meza</div>
+          <div class="nav-elements">
+            <ul>
+              <li>About me</li>
+              <li>Projects</li>
+              <li>Contact me</li>
+            </ul>
+          </div>
+        </nav>
+      </header>
       <section class="hero">
-        <div>
+        <div class="intro">
           <div>
-            <h1>Hi, I am Mario Meza</h1>
+            <h1>
+              Hi, I am <br />
+              Mario Meza
+            </h1>
             <p>Frontend Developer</p>
             <button>Download Resume</button>
           </div>
-          <div>
+          <div class="image">
             <img
               src="images/charles-adrien-fournier-g815W4LH4F8-unsplash (1).jpg"
               alt=""
@@ -93,5 +99,6 @@
         @Mario Meza <span class="current-year" id="current-year"></span>
       </footer>
     </main>
+    <script src="script.js"></script>
   </body>
 </html>
