@@ -215,7 +215,6 @@ h2 {
   margin-bottom: 1em;
 }
 
-
 .project-buttons button {
   background-color: var(--green);
   padding: 5px 10px;
@@ -230,4 +229,58 @@ h2 {
 
 .website-btn button {
   padding: 9px 10px;
+}
+
+/* Contact Form */
+
+.contact-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.get-in-touch {
+  margin: 3em 0;
+}
+
+.submit-now-btn {
+  display: flex;
+  justify-content: center;
+}
+
+.contact-form input {
+  border: none;
+  border-bottom: 1.5px solid #4f4f4f;
+  width: 20em;
+  outline: none;
+  background-color: transparent;
+  color: white;
+  line-height: 2;
+}
+
+.contact-form input::placeholder {
+  padding-top: 30px;
+}
+
+.contact-form textarea {
+  border: 1.5px solid #4f4f4f;
+  width: 100%;
+  height: 7em;
+  outline: none;
+  background-color: transparent;
+  color: white;
+  margin-top: 3em;
+  resize: none;
+  padding: 0.7em;
+  font-family: "DM Sans", sans-serif;
+}
+
+.submit-now-btn button {
+  background-color: var(--green);
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  border-radius: 2px;
+  margin-top: 3em;
 }
