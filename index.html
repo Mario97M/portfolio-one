@@ -18,9 +18,9 @@
           <div class="logo">Mario Meza</div>
           <div class="nav-elements">
             <ul>
-              <li>About me</li>
-              <li>Projects</li>
-              <li>Contact me</li>
+              <li data-target="about-section">About me</li>
+              <li data-target="projects-section">Projects</li>
+              <li data-target="contact-section">Contact me</li>
             </ul>
           </div>
         </nav>
@@ -29,10 +29,10 @@
 
       <section class="hero">
         <div class="intro">
-          <div>
+          <div class="intro-name">
             <h1>
               Hi, I'm <br />
-              Mario Meza
+              <span>Mario Meza</span>
             </h1>
             <p>Frontend Developer</p>
             <button>Download Resume</button>
@@ -44,16 +44,17 @@
             />
           </div>
         </div>
-        <div class="about">
+        <div class="about" id="about-section">
           <h2>About</h2>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt
-            praesentium recusandae voluptatem sit ab? Perspiciatis quia magni
-            dolore provident temporibus perferendis fuga voluptatum beatae
-            maiores fugit? Tenetur inventore voluptates temporibus, illum beatae
-            quam quasi eligendi, ullam omnis sit veritatis a tempore dignissimos
-            laudantium officia, accusamus repudiandae optio iure perferendis
-            doloremque!
+            As a highly motivated and passionate web developer, I bring a robust
+            skill set that includes proficiency in HTML, CSS, and JavaScript,
+            along with a deep understanding of GitHub and various development
+            tools. My commitment to clean, efficient code and user-centric
+            design drives me to continuously expand my expertise and deliver
+            exceptional results. Leveraging a strong foundation in front-end
+            technologies, I strive to create seamless, innovative experiences
+            that resonate with users.
           </p>
           <!-- Personal Contact Info -->
 
@@ -75,7 +76,7 @@
                 ></span>
                 <br />
                 Email Address <br />
-                mariomeza093@gmail.com
+                mariomeza2035@gmail.com
               </li>
               <li>
                 <span class="out"
@@ -93,7 +94,7 @@
                 ></span>
                 <br />
                 Phone Number <br />
-                (626) 202 - 3745
+                (626) 888-1844
               </li>
             </ul>
           </div>
@@ -105,35 +106,38 @@
             <div>
               <h2>Skills</h2>
             </div>
-            <div>
-              <ul>
-                <li>
-                  <div><img src="logos/html-5-logo.svg" alt="HTML Logo" /></div>
+            <div class="skill-section-container">
+              <div class="skill-section-container-center">
+                <div class="skill-type">
+                  <div><img src="logos/html-logo.svg" alt="HTML Logo" /></div>
                   <div style="color: #949494">HTML</div>
-                </li>
-                <li>
-                  <div><img src="logos/css-3-logo.svg" alt="CSS Logo" /></div>
+                </div>
+
+                <div class="skill-type">
+                  <div><img src="logos/css-logo.svg" alt="CSS Logo" /></div>
                   <div style="color: #949494">CSS</div>
-                </li>
-                <li>
+                </div>
+
+                <div class="skill-type">
                   <div>
                     <img src="logos/js-logo.svg" alt="Javascript Logo" />
                   </div>
                   <div style="color: #949494" v>JavaScript</div>
-                </li>
-                <li>
+                </div>
+
+                <div class="skill-type">
                   <div>
                     <img src="logos/github-logo.svg" alt="GitHub Logo" />
                   </div>
                   <div style="color: #949494">Git/GitHub</div>
-                </li>
-              </ul>
+                </div>
+              </div>
             </div>
           </div>
         </div>
         <!-- List of projects -->
 
-        <div class="project-sections">
+        <div class="project-sections" id="projects-section">
           <div>
             <h2>My Projects</h2>
             <div class="projects">
@@ -212,22 +216,38 @@
             </div>
           </div>
         </div>
+
         <!-- Contact Section -->
 
-        <div class="contact-section">
+        <div class="contact-section" id="contact-section">
           <div class="get-in-touch">
             <h2>Get in touch</h2>
           </div>
           <div>
-            <form class="contact-form" action="">
+            <form
+              class="contact-form"
+              action="https://formsubmit.co/mariomeza2035@gmail.com"
+              method="POST"
+            >
               <input
-                style="margin-bottom: 2em"
+                type="hidden"
+                name="_subject"
+                value="New email from portfolio one website"
+              />
+              <input
+                class="name-input"
                 placeholder="Name"
                 type="text"
+                required
               />
-              <input style="margin-left: 2em" placeholder="Email" type="text" />
-              <br />
-              <input placeholder="Phone number" type="text" /><br />
+              <input
+                class="email-input"
+                placeholder="Email"
+                type="email"
+                required
+              />
+
+              <input class="" placeholder="Phone number" type="text" />
               <textarea
                 placeholder="Message"
                 name=""
@@ -235,14 +255,16 @@
                 cols="30"
                 rows="10"
               ></textarea>
-              <br />
-              <div class="submit-now-btn"><button>Submit now</button></div>
+
+              <div class="submit-now-btn"><button>Send</button></div>
             </form>
           </div>
         </div>
       </section>
       <footer>
-        @Mario Meza <span class="current-year" id="current-year"></span>
+        <div>
+          @Mario Meza <span class="current-year" id="currentYear"></span>
+        </div>
       </footer>
     </main>
     <script src="script.js"></script>
