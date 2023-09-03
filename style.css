@@ -34,8 +34,18 @@ nav {
   justify-content: space-between;
 }
 
-nav div {
+.logo-brand,
+.nav-elements {
   margin: 0 3em;
+}
+
+.logo-brand img {
+  width: 3em;
+}
+
+.logo-brand {
+  display: flex;
+  gap: 15px;
 }
 
 .nav-elements ul {
@@ -90,6 +100,12 @@ nav div {
   border: none;
   cursor: pointer;
   border-radius: 2px;
+}
+
+.intro button i {
+  position: relative;
+  bottom: 2px;
+  margin-left: 4px;
 }
 
 .intro p {
@@ -172,7 +188,7 @@ h2 {
   grid-template-rows: 1fr;
   text-align: center;
   grid-column-gap: 30px;
-  grid-row-gap: 0px;
+  grid-row-gap: 20px;
 }
 
 .skill-type {
@@ -195,7 +211,7 @@ h2 {
   border-radius: 5px;
 }
 
-/* ------------------ */
+/* Project section */
 
 .project-sections {
   display: flex;
@@ -223,6 +239,10 @@ h2 {
   position: relative;
   border-radius: 9px 9px 5px 5px;
   border: 4px solid var(--green);
+}
+
+.project-container a {
+  text-decoration: none;
 }
 
 .project-buttons {
@@ -263,7 +283,6 @@ form {
   align-items: center;
 }
 
-
 .get-in-touch {
   margin: 5em 0 2em 0;
 }
@@ -283,6 +302,10 @@ form {
   line-height: 2;
 }
 
+.contact-form input:focus {
+  border-bottom: 1px solid white;
+}
+
 .contact-form input::placeholder {
   padding-top: 30px;
 }
@@ -298,6 +321,10 @@ form {
   resize: none;
   padding: 0.7em;
   font-family: "DM Sans", sans-serif;
+}
+
+.contact-form textarea:focus {
+  border: 1px solid white;
 }
 
 .name-input {
@@ -344,7 +371,7 @@ footer div {
 
   .intro-name {
     text-align: center;
-    margin-top: 5em;
+    margin-top: 3em;
   }
 
   .about {
@@ -359,12 +386,13 @@ footer div {
 
   .skill-section-container-center {
     display: grid;
-    grid-template-columns: 1fr 1fr; 
-    gap: 16px; 
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
   }
 
   .skill-section-container {
     width: 22em;
+    height: 22em;
   }
 
   .projects {
@@ -384,7 +412,7 @@ footer div {
   .name-input {
     margin-bottom: 3em;
   }
-  
+
   .email-input {
     margin: 0 0 2em 0;
   }
@@ -392,5 +420,4 @@ footer div {
   .contact-form textarea {
     height: 13em;
   }
-
 }

@@ -5,7 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
-    <title>Document</title>
+    <script
+      src="https://kit.fontawesome.com/e151b1ec0e.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>mario's portfolio one</title>
+    <link rel="icon" href="logos/computer-logo.svg" />
   </head>
   <body>
     <!-- Main project -->
@@ -15,7 +20,13 @@
         <!-- Nav bar -->
 
         <nav>
-          <div class="logo">Mario Meza</div>
+          <div class="logo-brand">
+            <div>
+              <img src="logos/computer-logo.svg" alt="computer logo brand" />
+            </div>
+            <div class="logo">Mario Meza</div>
+          </div>
+
           <div class="nav-elements">
             <ul>
               <li data-target="about-section">About me</li>
@@ -35,7 +46,14 @@
               <span>Mario Meza</span>
             </h1>
             <p>Frontend Developer</p>
-            <button>Download Resume</button>
+            <a href="/downloads/resume-8-31-23.pdf" download="resume.pdf"
+              ><button>
+                Download Resume
+                <i
+                  class="fa-solid fa-download"
+                  style="color: #000000"
+                ></i></button
+            ></a>
           </div>
           <div class="image">
             <img
@@ -45,7 +63,7 @@
           </div>
         </div>
         <div class="about" id="about-section">
-          <h2>About</h2>
+          <h2>About Me</h2>
           <p>
             As a highly motivated and passionate web developer, I bring a robust
             skill set that includes proficiency in HTML, CSS, and JavaScript,
@@ -110,26 +128,32 @@
               <div class="skill-section-container-center">
                 <div class="skill-type">
                   <div><img src="logos/html-logo.svg" alt="HTML Logo" /></div>
-                  <div style="color: #949494">HTML</div>
+                  <div style="color: white">HTML</div>
                 </div>
 
                 <div class="skill-type">
                   <div><img src="logos/css-logo.svg" alt="CSS Logo" /></div>
-                  <div style="color: #949494">CSS</div>
+                  <div style="color: white">CSS</div>
                 </div>
 
                 <div class="skill-type">
                   <div>
                     <img src="logos/js-logo.svg" alt="Javascript Logo" />
                   </div>
-                  <div style="color: #949494" v>JavaScript</div>
+                  <div style="color: white" v>JavaScript</div>
                 </div>
 
                 <div class="skill-type">
                   <div>
                     <img src="logos/github-logo.svg" alt="GitHub Logo" />
                   </div>
-                  <div style="color: #949494">Git/GitHub</div>
+                  <div style="color: white">Git/GitHub</div>
+                </div>
+                <div class="skill-type">
+                  <div>
+                    <img src="logos/vue-logo.svg" alt="Vue Logo" />
+                  </div>
+                  <div style="color: white">Vue</div>
                 </div>
               </div>
             </div>
@@ -141,75 +165,70 @@
           <div>
             <h2>My Projects</h2>
             <div class="projects">
+              <!-- First project -->
               <div class="project-container">
                 <div class="project">
                   <img
                     style="width: 100%"
-                    src="images/test-image.jpg"
+                    src="images/snap-rent-a-car-img.png"
                     alt="project-image"
                   />
                 </div>
                 <div class="project-details">
-                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                  Quod, enim.
+                  Car rental website: Snap Rent A Car <br />
+                  Tools used: HTML, CSS, Vue.js.
                 </div>
                 <div class="project-buttons">
-                  <div class="website-btn"><button>Go To Website</button></div>
+                  <div class="website-btn">
+                    <a target="_blank" href="https://snap-rent-a-car.com/"
+                      ><button>Go To Website</button></a
+                    >
+                  </div>
                   <div>
-                    <button>
-                      <div>GitHub</div>
-                      <div>
-                        <img width="20px" src="logos/github-btn.svg" alt="" />
-                      </div>
-                    </button>
+                    <a
+                      target="_blank"
+                      href="https://github.com/Mario97M/rental-car-search-card"
+                    >
+                      <button>
+                        <div>GitHub</div>
+                        <div>
+                          <img width="20px" src="logos/github-btn.svg" alt="" />
+                        </div></button
+                    ></a>
                   </div>
                 </div>
               </div>
+              <!-- Second project -->
               <div class="project-container">
                 <div class="project">
                   <img
                     style="width: 100%"
-                    src="images/test-image.jpg"
+                    src="images/kuching-tearoom-img.png"
                     alt="project-image"
                   />
                 </div>
                 <div class="project-details">
-                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                  Aliquid, ex.
+                  Resturaunt website: Kuching-TeaRoom Tools used: HTML, CSS,
+                  Vue.js.
                 </div>
                 <div class="project-buttons">
-                  <div class="website-btn"><button>Go To Website</button></div>
-                  <div>
-                    <button>
-                      <div>GitHub</div>
-                      <div>
-                        <img width="20px" src="logos/github-btn.svg" alt="" />
-                      </div>
-                    </button>
+                  <div class="website-btn">
+                    <a target="_blank" href="https://kuching-tearoom.com/"
+                      ><button>Go To Website</button></a
+                    >
                   </div>
-                </div>
-              </div>
-              <div class="project-container">
-                <div class="project">
-                  <img
-                    style="width: 100%"
-                    src="images/test-image.jpg"
-                    alt="project-image"
-                  />
-                </div>
-                <div class="project-details">
-                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                  Deleniti, porro!
-                </div>
-                <div class="project-buttons">
-                  <div class="website-btn"><button>Go To Website</button></div>
                   <div>
-                    <button>
-                      <div>GitHub</div>
-                      <div>
-                        <img width="20px" src="logos/github-btn.svg" alt="" />
-                      </div>
-                    </button>
+                    <a
+                      target="_blank"
+                      href="https://github.com/Mario97M/Kuching-TeaRoom"
+                    >
+                      <button>
+                        <div>GitHub</div>
+                        <div>
+                          <img width="20px" src="logos/github-btn.svg" alt="" />
+                        </div>
+                      </button>
+                    </a>
                   </div>
                 </div>
               </div>
@@ -247,7 +266,7 @@
                 required
               />
 
-              <input class="" placeholder="Phone number" type="text" />
+              <input placeholder="Phone number" type="text" />
               <textarea
                 placeholder="Message"
                 name=""
