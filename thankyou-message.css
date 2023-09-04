@@ -1,0 +1,79 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600;9..40,700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.thankyou-background {
+  height: 100vh;
+  background-color: #171717;
+  color: white;
+  font-family: "DM Sans", sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.thankyou-message-icons {
+  margin-top: 3em;
+  position: relative;
+  left: 4em;
+}
+
+.thankyou-message-icons img {
+  width: 3em;
+}
+
+.dot1 {
+  position: relative;
+  top: 100px;
+}
+.dot2 {
+  position: relative;
+  top: 50px;
+  right: 30px;
+}
+.dot3 {
+  position: relative;
+  top: 25px;
+  right: 35px;
+}
+.dot4 {
+  position: relative;
+  top: 45px;
+  right: 40px;
+}
+.dot5 {
+  position: relative;
+  top: 80px;
+  right: 60px;
+}
+.dot6 {
+  position: relative;
+  top: 100px;
+  right: 75px;
+}
+.dot7 {
+  position: relative;
+  top: 80px;
+  right: 85px;
+}
+.dot8 {
+  position: relative;
+  top: 45px;
+  right: 110px;
+}
+
+.airplane {
+  position: relative;
+  right: 140px;
+}
+
+.back-button {
+    position: relative;
+    top: 10em;
+}
