@@ -360,6 +360,12 @@ footer div {
   display: none;
 }
 
+.thankyou-message {
+  color: var(--green);
+  text-align: center;
+  margin-top: 1.5em;
+}
+
 @media all and (max-width: 750px) {
   header {
     display: none;

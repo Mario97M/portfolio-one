@@ -16,3 +16,12 @@ function getCurrentYear() {
   currentYear.textContent = new Date().getFullYear();
 }
 getCurrentYear();
+
+document.addEventListener("DOMContentLoaded", () => {
+  const contactForm = document.getElementById("contactForm");
+  const thankyouMessage = document.getElementById("thankyouMessage");
+
+  form.addEventListener("submit", () => {
+    thankyouMessage.innerText = "Thankyou for submitting your message!";
+  });
+});
